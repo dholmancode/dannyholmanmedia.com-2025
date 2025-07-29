@@ -9,8 +9,8 @@
 
 <body <?php body_class(); ?>>
 
-<header id="site-header" class="fade-in-up animate-in px-3 fixed left-0 w-full z-50 transition-all duration-500 bg-transparent">
-  <div class="container mx-auto flex items-center justify-between p-6 transition-all duration-500 flex-wrap lg:flex-nowrap" id="header-inner">
+<header id="site-header" class="px-3 fixed left-0 w-full z-50 transition-all duration-500 bg-transparent">
+  <div class="fade-in-up animate-in container mx-auto flex items-center justify-between p-6 transition-all duration-500 flex-wrap lg:flex-nowrap" id="header-inner">
 
     <!-- Site Logo -->
     <a href="<?php echo esc_url(home_url('/')); ?>" class="shrink-0">
@@ -57,7 +57,7 @@
       <?php
       wp_nav_menu([
         'theme_location' => 'primary',
-        'menu_class'     => 'flex flex-col space-y-4 list-none text-lg',
+        'menu_class'     => 'flex flex-col space-y-4 list-none text-[90px]',
         'container'      => false,
         'fallback_cb'    => false,
         'depth'          => 1,
