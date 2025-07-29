@@ -9,7 +9,7 @@ $image_order_class = $image_on_right ? 'md:order-2' : 'md:order-1';
 $text_order_class  = $image_on_right ? 'md:order-1' : 'md:order-2';
 ?>
 
-<section class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-8">
+<section class="zoom-in container mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-8">
 
   <?php if ($image): ?>
     <div class="md:w-1/2 <?php echo esc_attr($image_order_class); ?>">

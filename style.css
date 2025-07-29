@@ -82,3 +82,21 @@ Text Domain: dannyholmanmedia
     font-size: 1rem;
     line-height: 1.6;
   }
+
+  /* Default state for elements */
+.animate-in,
+.animate-out {
+  transition: all 0.5s ease; /* Smooth transition for all changes */
+}
+
+/* Animation when the element scrolls into view */
+.animate-in {
+  transform: translateY(0px); /* Reset position */
+  opacity: 1; /* Fully visible */
+}
+
+/* Animation when the element scrolls out of view */
+.animate-out {
+  transform: translateY(20px); /* Move slightly down */
+  opacity: 0; /* Fully faded */
+}

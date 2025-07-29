@@ -11,7 +11,7 @@ if (!$gallery_items || count($gallery_items) === 0) return;
       if (!$img) continue;
     ?>
       <div class="relative group cursor-pointer break-inside-avoid mb-4 overflow-hidden" data-index="<?php echo $index; ?>">
-        <img 
+        <img
           src="<?php echo esc_url($img['url']); ?>" 
           alt="<?php echo esc_attr($img['alt']); ?>" 
           class="w-full object-cover shadow-lg transition-transform duration-500 group-hover:scale-105"

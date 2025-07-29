@@ -40,7 +40,7 @@ if ($hero_type === 'cta') {
 }
 ?>
 
-<section class="relative bg-cover bg-center min-h-[90vh] py-32 md:py-40 flex items-center" style="background-image: url('<?php echo esc_url($background_url); ?>');">
+<section class="zoom-in relative bg-cover bg-center min-h-[90vh] py-32 md:py-40 flex items-center" style="background-image: url('<?php echo esc_url($background_url); ?>');">
   <?php if ($overlay_color): ?>
     <div class="absolute inset-0" style="background-color: <?php echo esc_attr($overlay_color); ?>; opacity: 0.5; pointer-events: none;"></div>
   <?php endif; ?>

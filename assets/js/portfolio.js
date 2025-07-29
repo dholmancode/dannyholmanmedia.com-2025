@@ -13,10 +13,10 @@
       function setActiveTab(index) {
         tabs.forEach((tab, i) => {
           if (i === index) {
-            tab.classList.add('is-active', 'text-brand-lightTeal', 'font-semibold');
+            tab.classList.add('is-active', 'text-brand-lightTeal');
             tab.classList.remove('text-white');
           } else {
-            tab.classList.remove('is-active', 'text-brand-lightTeal', 'font-semibold');
+            tab.classList.remove('is-active', 'text-brand-lightTeal');
             tab.classList.add('text-white');
           }
         });

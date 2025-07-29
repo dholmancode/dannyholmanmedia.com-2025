@@ -32,7 +32,7 @@ $bg_images = get_sub_field('background_images'); // repeater field for backgroun
   </div>
 
   <!-- Hero Content -->
-  <div class="container dgh-hero-cta mx-auto px-4 relative z-10 max-w-4xl">
+  <div class="zoom-in animate-in container dgh-hero-cta mx-auto px-4 relative z-10 max-w-4xl">
     <?php if ($title): ?>
       <h1 class="text-4xl md:text-6xl font-extrabold mb-10 drop-shadow-lg"><?php echo esc_html($title); ?></h1>
     <?php endif; ?>

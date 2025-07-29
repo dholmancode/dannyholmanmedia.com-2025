@@ -3,9 +3,8 @@ $slides = get_sub_field('slides');
 if (!$slides || count($slides) === 0) return;
 ?>
 
-<section class="container mx-auto px-4 py-16">
+<section class="zoom-in container opacity-[.50] mx-auto px-4 py-16 animate-in animate-out">
   <div id="slideshow" class="relative max-w-4xl mx-auto select-none">
-    
     <!-- Slides Wrapper -->
     <div class="relative overflow-hidden h-[500px]">
       <div id="slide-track" class="flex transition-transform duration-700 ease-in-out" style="width: 100%;">

@@ -31,7 +31,7 @@ for ($i = 1; $i <= 3; $i++) {
 ?>
 
 <section
-  class="portfolio-item max-w-6xl mx-auto px-4 py-[90px]"
+  class="fade-in-up portfolio-item max-w-6xl mx-auto px-4 py-[90px]"
   data-details='<?php echo json_encode($details_data, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>'
 >
   <div class="flex flex-col md:flex-row md:gap-12">
@@ -69,13 +69,13 @@ for ($i = 1; $i <= 3; $i++) {
             <button
               type="button"
               data-index="<?php echo esc_attr($index); ?>"
-              class="project-detail-tab px-4 py-2 border border-brand-accent rounded-full text-sm font-medium bg-brand-dark
+              class="project-detail-tab px-4 py-2 border border-brand-accent rounded-full text-sm font-semibold bg-brand-dark
                 shadow-[0_4px_0_0_#E59C59]
                 hover:translate-y-[2px] hover:shadow-[0_2px_0_0_#E59C59]
                 active:translate-y-[3px] active:shadow-none
                 transition-all duration-150 ease-in-out
                 focus:outline-none
-                <?php echo $index === 0 ? 'is-active !text-brand-lightTeal font-semibold' : 'text-white'; ?>"
+                <?php echo $index === 0 ? 'is-active !text-brand-lightTeal' : 'text-white'; ?>"
             >
               <?php echo esc_html($detail['subject']); ?>
             </button>
