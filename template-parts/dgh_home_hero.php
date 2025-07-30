@@ -13,6 +13,17 @@ $cta_3_desc = get_sub_field('cta_3_description');
 $bg_images = get_sub_field('background_images'); // repeater field for background images
 ?>
 
+<div class="home-animation w-[100vw] h-[100vh] justify-center items-center flex flex-col">
+  <div class="home-logo-wrapper">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/DGH_Elipse.svg"
+         alt="Ellipse"
+         class="home-logo-ellipse" />
+    <img src="<?php echo get_template_directory_uri(); ?>/images/DGH_Tri.svg"
+         alt="Triangle Logo"
+         class="home-logo-triangle" />
+  </div>
+</div>
+
 <section class="relative h-[100vh] text-white flex items-center justify-center text-center transition duration-[1500ms] overflow-hidden">
   <!-- Background Slideshow -->
   <div id="bg-slideshow" class="absolute inset-0 -z-10">

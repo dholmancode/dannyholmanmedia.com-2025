@@ -34,6 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
         logo.classList.add('max-w-[120px]', 'sm:max-w-[160px]', 'lg:max-w-[200px]');
       }
     }
+    // Home Animation fade out
+  const homeAnimation = document.querySelector('.home-animation');
+  if (homeAnimation) {
+    setTimeout(() => {
+      homeAnimation.classList.add('fade-out');
+    }, 1000);
+  }
 
     // Animate sections in/out on scroll
     sections.forEach((section) => {
